@@ -41,5 +41,16 @@ try:
 
 except IOError as e:
     print(f"Error saving data to file: {e}")
+
+print("--- Aggregate Metrics ---")
+if processed_sales_data:
+    total_all_revenue = sum(record["total_revenue"] for record in processed_sales_data)
+    average_revenue_per_sale = total_all_revenue / len(processed_sales_data)
+    print(f"Total Revenue across all sales: ${total_all_revenue:.2f}")
+    print(f"Average Revenue per sale: ${average_revenue_per_sale:.2f}")
+else:
+    print("No sales data to analyze.")
+
 print("\n---- Script Finished ----")
 print("Thank you for using the sales processing script!")
+
