@@ -1,0 +1,6 @@
+Product,Quantity,Unit Price,Total Revenue
+Laptop,10,1200.0,12000.0
+Mouse,25,25.0,625.0
+Keyboard,15,45.0,675.0
+Monitor,5,300.0,1500.0
+webcam,20,75.0,1500.0
